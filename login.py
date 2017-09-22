@@ -57,8 +57,8 @@ headers['X-Requested-With'] = 'XMLHttpRequest'
 loginurl = 'https://www.zhihu.com/login/email'
 postdata = {
     '_xsrf': xsrf_token,
-    'email': '2515339629@qq.com',
-    'password': '19951021.zhao'
+    'email': '',
+    'password': ''
 }
 loginresponse = session.post(url=loginurl, headers=headers, data=postdata)
 print('服务器端返回响应码：', loginresponse.status_code)
